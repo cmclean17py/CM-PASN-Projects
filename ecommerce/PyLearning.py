@@ -98,7 +98,28 @@
 #   print ("You failed ")
 
 
-for i in range(1, 8):
-    for j in range(1, 8):
-        print(i*j, end = '   ')
-    print(' ')
+#for i in range(1, 8):
+#    for j in range(1, 8):
+#        print(i*j, end = '   ')
+#    print(' ')
+
+
+
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def  __init__(self, sentenace):
+        self.sentance = sentenace
+        print("What do you want me to say")
+
+john = Person("John Smith")
+words = Person("What did you say?  ")
+print(john.name)
+print(words.sentance)
+
+
+
+
