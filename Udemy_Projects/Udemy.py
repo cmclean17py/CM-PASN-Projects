@@ -100,4 +100,48 @@
 #def almost_there(n):
 
 
+# Given a list of ints return true if the array contains a 3 next to a 3 somowhere
+
+#def find_33(list):
+#    for i in range(0,len(list)-1):
+#        if list[i] == 3 and list[i+1] == 3:
+#            return True
+#    else:
+#        return False
+
+#print(find_33([1,3,4,6,4,3,5]))
+
+
+# given a string, return a string where for every character in the original there are 3 characters
+#def paper_doll(text):
+#    result = ''
+#    for char in text:
+#        result += char*3
+#    return result
+
+#print(paper_doll('Christopher'))
+
+
+#BLACK JACK: given 3 integers between 1 and 11, if there sum is less than or equal to 21 return there sum
+#if their sum exceeds 21 and there's an eleven reduce the total sum by 1o
+#finally, if the sum (even after adjustment exceeds 21, return 'BUST'
+
+def blackjack(a,b,c):
+    if sum([a,b,c]) <= 21:
+        return sum([a,b,c])
+    elif 11 in [a,b,c] and sum([a,b,c]) - 10 <= 21:
+            return sum([a,b,c]) - 10
+    else:
+        return "BUST"
+
+
+print(blackjack(5,9,10))
+
+
+
+
+
+
+
+
 
